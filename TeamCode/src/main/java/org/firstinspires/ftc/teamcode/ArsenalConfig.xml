@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot type="FirstInspires-FTC">
+    <LynxUsbDevice name="Hub Portal" serialNumber="(embedded)" parentModuleAddress="1">
+        <LynxModule name="Control Hub" port="1">
+            <RevRobotics40HDHexMotor name="LeftFrontMotor" port="0" />
+            <RevRobotics40HDHexMotor name="LeftBackMotor" port="1" />
+            <RevRobotics40HDHexMotor name="RightFrontMotor" port="2" />
+            <RevRobotics40HDHexMotor name="RightBackMotor" port="3" />
+            <Servo name="ClawH" port="0" />
+            <Servo name="ClawV" port="1" />
+            <Servo name="Claw" port="2" />
+            <Servo name="Hook" port="3" />
+            <Servo name="Capstone" port="4" />
+            <ColorSensor name="LineColor" port="0" bus="1" />
+        </LynxModule>
+        <LynxModule name="Expansion Hub" port="2">
+            <RevRoboticsCoreHexMotor name="SlideL" port="0" />
+            <RevRoboticsCoreHexMotor name="SlideR" port="1" />
+            <RevRoboticsCoreHexMotor name="IntakeLM" port="2" />
+            <RevRoboticsCoreHexMotor name="IntakeRM" port="3" />
+            <ContinuousRotationServo name="IntakeLS" port="0" />
+            <ContinuousRotationServo name="IntakeRS" port="1" />
+            <Servo name="ClampH" port="2" />
+            <Servo name="ClampV" port="3" />
+            <ContinuousRotationServo name="SlideH" port="4" />
+            <LynxColorSensor name="SkystoneColorSensor" port="0" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="DistanceSensorBack" port="1" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="DistanceSensorRight" port="2" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="DistanceSensorFront" port="3" bus="0" />
+            <LynxEmbeddedIMU name="Imu" port="4" bus="0" />
+        </LynxModule>
+    </LynxUsbDevice>
+</Robot>
